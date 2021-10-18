@@ -100,13 +100,17 @@ h2 {
 .headshot {
     padding: 25px; 
     width: 40%;
-    display: flex;
-    justify-content: center;
+    flex: 0 2 350px; 
+}
+
+.headshot img {
+    max-width: 100%;
 }
 
 .profile-text {
     width: 60%;
     display: inline-block;
+    flex: 2 60%;
 }
 
 .profile-text p {
