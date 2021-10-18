@@ -133,7 +133,7 @@ h2 {
 }
 
   /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1086px) {
+@media screen and (max-width: 1040px) {
     header {
       padding-bottom: 0;
       justify-content: center;
@@ -155,5 +155,23 @@ h2 {
   
     header nav ul li a {
       font-size: 20px;
+    }
+}
+
+ /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header nav { 
+        margin: 0;
+    }
+    header nav ul {
+        display: inline-block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 5px;
+        padding: 5px 0 15px 0;
+    }
     }
 }
