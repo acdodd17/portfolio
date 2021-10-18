@@ -78,6 +78,17 @@ h2 {
     border-bottom: 4px solid var(--tertiary-color);
 }
 
+.section-title {
+    width: 35%;
+    text-align: left;
+}
+
+.section-title h2 {
+    border-right: 4px solid var(--tertiary-color);
+    border-bottom: none;
+    margin: 0;
+}
+
 /* ABOUT ME SECTION STYLE */
 .profile {
     display: flex;
@@ -93,7 +104,6 @@ h2 {
     justify-content: center;
 }
 
-
 .profile-text {
     width: 60%;
     display: inline-block;
@@ -107,8 +117,16 @@ h2 {
 /* MY WORK SECTION STYLE */
 .projects {
     background-color: #F0A202;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+/* CONTACT ME STYLE */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
 
   /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1086px) {
