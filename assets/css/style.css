@@ -86,7 +86,7 @@ h2 {
 .section-title h2 {
     border-right: 4px solid var(--tertiary-color);
     border-bottom: none;
-    margin: 0;
+    margin: 10px;
 }
 
 /* ABOUT ME SECTION STYLE */
@@ -173,5 +173,5 @@ h2 {
         margin: 5px;
         padding: 5px 0 15px 0;
     }
-    }
+    
 }
