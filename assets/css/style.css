@@ -78,28 +78,17 @@ h2 {
     border-bottom: 4px solid var(--tertiary-color);
 }
 
-.section-title {
-    width: 35%;
-    text-align: left;
-}
-
-.section-title h2 {
-    border-right: 4px solid var(--tertiary-color);
-    border-bottom: none;
-    margin: 10px;
-}
-
 /* ABOUT ME SECTION STYLE */
 .profile {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
 }
 
 .headshot {
     padding: 25px; 
-    width: 40%;
+    width: 50%;
     flex: 0 2 350px; 
 }
 
@@ -108,28 +97,72 @@ h2 {
 }
 
 .profile-text {
-    width: 60%;
+    width: 50%;
     display: inline-block;
     flex: 2 60%;
+    
 }
 
 .profile-text p {
     font-size: 20px;
     padding: 25px;
+    text-align: center;
 }
 
 /* MY WORK SECTION STYLE */
 .projects {
     background-color: #F0A202;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.project-list {
+    width: 65%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+
+.project-list img {
+    padding: 15px; 
+    width: 100%;
+}
+
+.run-buddy {
+    flex: 2 0 100%;
+}
+.horiseon {
+    flex: 0 2 50%;
+}
+
+.bugg {
+    flex: 0 2 50%;
+}
+
 
 /* CONTACT ME STYLE */
 .contact {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.section-title {
+    width: 35%;
+    text-align: left;
+}
+
+.section-title {
+    border-right: 4px solid var(--tertiary-color);
+    border-bottom: none;
+    margin: 10px;
 }
 
   /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
