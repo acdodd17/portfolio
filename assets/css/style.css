@@ -35,8 +35,7 @@ header h1 {
     font-size: 56px;
     color: var(--primary-color);
     margin: 10px;
-    align-items: center;
-    border-right: 4px solid var(--tertiary-color);
+    text-align: center;
 }
 
 header a {
@@ -58,7 +57,7 @@ header nav ul {
 }
   
 header nav ul li a {
-    padding: 25px 30px;
+    padding: 15px;
     font-weight: bold;
     font-size: 2vw;
 }
@@ -99,8 +98,7 @@ h2 {
 .profile-text {
     width: 50%;
     display: inline-block;
-    flex: 2 60%;
-    
+    flex: 2 60%;    
 }
 
 .profile-text p {
@@ -131,21 +129,49 @@ h2 {
     justify-content:space-between;
 }
 
+.project-list ul li {
+    position: relative;
+    display: flex;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    border-bottom: 2px solid var(--tertiary-color);
+    padding: 10px;
+    margin: 5px;
+}
 
 .project-list img {
-    padding: 15px; 
+    object-fit: contain;
+    padding: 25px;
     width: 100%;
+    opacity: 0.5;
 }
 
-.run-buddy {
-    flex: 2 0 100%;
-}
-.horiseon {
-    flex: 0 2 50%;
+.project-list img:hover {
+    opacity: 1;
 }
 
-.bugg {
+.main-project {
+    flex: 2 0 75%;
+}
+
+
+.secondary-projects {
+    display: flex;
+}
+
+.secondary-projects li {
     flex: 0 2 50%;
+
+}
+
+.secondary-projects li img {
+    object-fit: scale-down;
 }
 
 
@@ -157,16 +183,13 @@ h2 {
 .section-title {
     width: 35%;
     text-align: left;
-}
-
-.section-title {
-    border-right: 4px solid var(--tertiary-color);
     border-bottom: none;
     margin: 10px;
 }
 
+
   /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1024px) {
     header {
       padding-bottom: 0;
       justify-content: center;
@@ -177,7 +200,6 @@ h2 {
       width: 100%;
       text-align: center;
       border-bottom: 4px solid var(--tertiary-color);
-      border-right: none;
     }
   
     header nav ul {
@@ -188,6 +210,29 @@ h2 {
   
     header nav ul li a {
       font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .project-list img {
+        padding: 10px;
+    }
+   
+    .contact {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .section-title {
+        width: 100%;
     }
 }
 
@@ -205,6 +250,10 @@ h2 {
     header nav ul li {
         margin: 5px;
         padding: 5px 0 15px 0;
+    }
+
+    .secondary-projects {
+        flex-direction: column;
     }
     
 }
