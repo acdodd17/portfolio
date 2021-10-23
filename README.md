@@ -22,7 +22,7 @@ ACCEPTANCE CRITERIA
 
 WEBPAGE APPLICATION APPEARANCE
 ------------------------------
-![Screenshot of webpage]()
+![Screenshot of webpage](./assets/images/portfolio.png)
 
 ## CONTRIBUTION
 
