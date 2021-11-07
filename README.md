@@ -26,4 +26,4 @@ WEBPAGE APPLICATION APPEARANCE
 
 ## CONTRIBUTION
 
-Made by by Anna Dodd
+Made by Anna Dodd
